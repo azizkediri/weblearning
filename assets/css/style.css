@@ -1,0 +1,68 @@
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+  background: rgb(209, 218, 212);
+  background: linear-gradient(to right,  rgb(8, 167, 93) ,  rgb(51, 255, 160) );
+}
+
+.card-sign {
+  border: 0;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 1);
+}
+
+.card-sign .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-sign .card-body {
+  padding: 3rem;
+}
+
+.form-sign {
+  width: 100%;
+}
+
+.form-sign .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.1s;
+  background: linear-gradient(to right,  rgb(51, 255, 160) ,  rgb(8, 167, 93) );
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.form-label-group input {
+  height: 50px;
+  
+}
+
+
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 120%;
+  margin-bottom: 0;
+}
+
+
+
+
+
