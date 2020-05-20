@@ -19,6 +19,9 @@ class Login extends CI_Controller{
 
 	public function auth(){
 
+		$user = $this->input->post('username');
+		$pass = $this->input->post('password');
+		// echo $user;
 			$data['aktif'] = 1;
 			// redirect('Beranda/index');
 			$this->load->view('header');

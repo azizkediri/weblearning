@@ -3,7 +3,7 @@
     <aside class="app-sidebar" id="sidebar">
       <div class="sidebar-header">
         <a class="sidebar-brand" href="<?php echo site_url('Beranda') ?>">
-          <img src="<?php echo base_url(); ?>template/image/immg.png" style="width:70px; height:70px">
+          <img src="<?php echo base_url(); ?>template/image/book.png" style="width:70px; height:70px">
         </a>
         <center>
           <p class="control-label" style="color:#000000;"></p>

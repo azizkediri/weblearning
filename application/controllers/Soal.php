@@ -12,7 +12,7 @@ class Soal extends CI_Controller
 
 	public function index()
 	{
-		$data['aktif'] = 3;
+		$data['aktif'] = 2;
 
 		$this->load->view('header');
 		$this->load->view('menu', $data);

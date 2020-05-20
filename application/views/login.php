@@ -1,43 +1,99 @@
+<?php
+if (isset($this->session->userdata['logged_in'])) {
+  redirect('beranda');
+  exit();
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bendahara - PPMH</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <!DOCTYPE html>
- <html>
- 	<head>
- 		<title>InstaBot</title>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/assets/css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/assets/css/flat-admin.css">
 
- 		<!-- CSS -->
- 		<link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/bootstrap.min.css">
- 		<link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/style.css">
- 		<link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/all.css">
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/assets/css/theme/blue-sky.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/assets/css/theme/blue.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/assets/css/theme/red.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>template/assets/css/theme/yellow.css">
+  <link rel="icon" href="<?php echo base_url(); ?>template/image/book.png" type="image/x-icon">
+</head>
+<body>
 
- 		<!-- javascript -->
- 		<link rel="stylesheet" href="<?php echo base_url() ?>/assets/js/bootstrap.min.js">
- 		<link rel="stylesheet" href="<?php echo base_url() ?>/assets/js/bootstrap.js">
- 		<link rel="stylesheet" href="<?php echo base_url() ?>/assets/js/bootstrap.bundle.js">
- 		<link rel="stylesheet" href="<?php echo base_url() ?>/assets/js/jquery.lim.min.js">
+  <div class="app app-default">
+ <form action="<?php echo site_url('login/auth'); ?>" method="post" role="form">
+<div class="app-container app-login">
 
- 	</head>
- 	<body>
- 		<div class="container">
- 			<div class="row">
- 				<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
- 					<div class="card card-sign my-5">
- 						<div class="card-body">
- 							<h4 class="card-title text-center">Web Nahwu</h4>
- 							<form action="<?php echo site_url('Login/auth'); ?>" class="form-sign">
- 								<div class="form-label-group">
- 									<input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus>
- 									
- 								</div>
- 								<div class="form-label-group">
- 									<input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
- 									
- 								</div>
- 								<button class="btn btn--primary btn-block text-uppercase" type="submit">Sign In</button>
- 							</form>
- 						</div>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 	</body>
- </html>
+  <div class="flex-center">
+    <div class="app-header"></div>
+    <div class="app-body">
+     
+      <div class="app-block">
+        <div class="app-right-section">
+          <div class="app-brand">
+			<center><img src="<?php echo base_url(); ?>template/image/book.png" style="width: 150px; height: 150px; float: middle;"> </a>
+		</center>
+		<br>
+		<center>Web Nahwu<br>Challenges</center>
+		
+		</div>
+          <div class="app-info">
+            
+            <ul class="list">
+			  <li>
+               <div class="title"><strong><h3 style="float: left;">Panduan Login</h3></strong></div>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="title">Masukkan <b>Username</b> pada form inputan.</div>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="title">Masukkan <b>Password</b> pada form inputan.</div>
+              </li>
+			</ul>
+          </div>
+        </div>
+        <div class="app-form">
+          <div class="form-suggestion">
+           <h1><strong>LOGIN</strong></h1>
+          </div>
+		  <br>
+         
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-user"></i></span>
+                <input type="text" require class="form-control" name="username" placeholder="Masukkan Username">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-key" ></i></span>
+                <input type="password" require class="form-control" name="password" placeholder="Masukkan Password">
+              </div>
+              
+              <div class="text-center">
+                 <input type="submit" id="loginbtn" class="btn btn-sm btn-submit"  style="width: 100%; background-color:#009A35; color:#ffffff;" value="Login">
+              </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="app-footer">
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script type="text/javascript" src="<?php echo base_url(); ?>template/assets/js/vendor.js"></script>
+  <script type="text/javascript" src="<?php echo base_url(); ?>template/assets/js/app.js"></script>
+
+</body>
+</html>
