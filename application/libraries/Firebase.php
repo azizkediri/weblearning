@@ -17,7 +17,8 @@ class Firebase {
         // Assign the CodeIgniter super-object
         $this->CI =& get_instance();
 
-        $this->serviceAccount = ServiceAccount::fromJsonFile($this->CI->config->item('firebase_app_key'));
+        // $this->serviceAccount = ServiceAccount::fromJsonFile($this->CI->config->item('fir-e2693-firebase-adminsdk-atepy-62115cfb53.json'));
+        $this->serviceAccount = ServiceAccount::fromJsonFile( __DIR__ . '/../config/fir-e2693-firebase-adminsdk-atepy-62115cfb53.json');
     }
 
     
